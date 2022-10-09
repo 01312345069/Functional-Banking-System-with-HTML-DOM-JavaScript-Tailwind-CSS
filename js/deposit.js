@@ -1,7 +1,3 @@
-console.log('Test file2022')
-
-deposit - field
-btn - deposit
 /*
 step:1- add event listener to the deposit button
 step:2- get deposit amount from the deposit input field
@@ -26,5 +22,9 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     const depositTotalElement = document.getElementById('deposit-total');
     const previousDepositTotalString = depositTotalElement.innerText;
     const previousDepositTotal = parseFloat(previousDepositTotalString);
+
+    // step-5 
+    const newDepositTotal = previousDepositTotal + newDepositAmount;
+    depositTotalElement.innerText = newDepositTotal;
 
 })
